@@ -1,0 +1,6 @@
+These are codes for practical 2
+To compile:
+gcc -o Conv Conversion.c -lm
+gcc -o sum Sum.c
+gfortran -o Convf Conversion.f90
+gfortran -o sumf Sum.f90
