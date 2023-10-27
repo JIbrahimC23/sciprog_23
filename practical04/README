@@ -1,0 +1,7 @@
+These are codes for practical04
+To compile:
+gcc -o trap_deg trap_deg.c -lm 
+/*In this code we restirected with the instructions of the practise4, where there exits only one argument, the number of points, and the return value is the area. When compiling with C we  used #include < math.h > and compile with “-lm” because this ensures the tan function is available.*/
+
+gcc -o trap_deg_glob trap_deg_glob.c -lm
+// In this code we have used the global variables
