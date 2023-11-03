@@ -1,0 +1,34 @@
+These are codes for practical06:
+//To compile the matrix multiplication (matmult.c) we use:
+gcc -o matmult matmult.c
+./matmult
+
+//To compile step 6, we use:
+gcc -c main.c
+gcc -c matmult.c
+gcc -o matmultc main.o matmult.o
+./matmultc
+
+//To construct a Makefile that will compile the two files in step 6 to generate the executable we use:
+C = gcc
+CCFLAGS = -O3
+LDFLAGS = -lm
+
+all: matmultc
+
+matmultc: main.o matmult.o
+        $(CC) -o $@ $^  $(LDFLAGS)
+        
+matmult.o: matmult.c
+        $(CC) -c $(CCFLAGS) $<
+        
+main.o: main.c
+        $(CC) -c $(CCFLAGS) $<
+        
+
+clean:
+        rm *.o
+~                                                                       
+~              
+
+
