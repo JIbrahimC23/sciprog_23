@@ -1,0 +1,10 @@
+The are codes for practical 3
+To compile:
+gcc -o use_printf use_printf.c
+\\In this exercise we used printf function to print two integers and two float numbers
+
+gcc -o trap trap.c -lm
+\\In this exercised we calculated the area under the curve of f(x)function using the trapezoidal rule, where the "for loop" was used to execute the iteration.
+
+gcc -o trap2 trap2.c -lm
+\\In this exercised we calculated the area under the curve of f(x)function using the trapezoidal rule, where the "while loop" was used to execute the iteration.
