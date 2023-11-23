@@ -1,0 +1,16 @@
+//This are codes for practical09
+// To compile we use: 
+
+gcc main.c
+
+// we just use gcc main.c becaus I included the external  function as in the header file which is included in main.c
+
+Then we use:
+
+ls
+
+//to list the files and use:
+
+./a.out
+
+//Then we enter the file name..
